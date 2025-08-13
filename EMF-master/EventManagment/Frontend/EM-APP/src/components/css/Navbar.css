@@ -1,0 +1,188 @@
+/* Navbar.css */
+.navbar {
+    background-color: #333;
+    color: #f8f8f2;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-brand .brand-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8f8f2;
+    text-decoration: none;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #f8f8f2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #2d8cf0;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #f8f8f2; /* Ensure text color for buttons */
+  }
+  
+  .action-button:hover {
+    background-color: #444;
+  }
+  
+  .notification-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .notification-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .notification-dot {
+    position: absolute;
+    top: -4px; /* Move 4px up */
+    right: -3px; /* Move 3px to the right */
+    background-color: red; /* Red color for the dot */
+    width: 8px; /* Small dot size */
+    height: 8px; /* Small dot size */
+    border-radius: 50%; /* Make it circular */
+    pointer-events: none; /* Prevent interaction with the dot */
+  }
+
+  .user-section {
+    position: relative; /* To position the popup relative to this */
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+  
+  .user-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .username {
+    font-size: 1rem;
+  }
+  
+  /* User Info Popup */
+  .user-info-popup {
+    position: absolute;
+    top: calc(100% + 5px); /* Position below the username */
+    right: 0; /* Align to the right of the user section */
+    background-color: #444; /* Dark background for the popup */
+    color: #f8f8f2;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    padding: 1.5rem; /* Increase padding for better spacing */
+    z-index: 10; /* Ensure it's above other elements */
+    min-width: 250px; /* Increase width for better spacing */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .user-section.active .user-info-popup {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .user-info-popup .user-details {
+    margin-bottom: 1.5rem; /* Add more spacing between details and buttons */
+  }
+  
+  .user-info-popup .user-details p {
+    margin: 0.8rem 0; /* Add more spacing between each detail */
+    font-size: 1rem; /* Increase font size for better readability */
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  .user-info-popup .user-details p strong {
+    color: #f8f8f2; /* Highlight labels */
+  }
+  
+  .user-info-popup .user-actions {
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    gap: 0.8rem; /* Add more spacing between buttons */
+  }
+  
+  .user-info-popup .logout-button,
+  .user-info-popup .update-button {
+    flex: 1; /* Make buttons equal width */
+    background-color: #d32f2f; /* Red for logout */
+    color: #f8f8f2;
+    border: none;
+    padding: 0.4rem 0.8rem; /* Reduce button size */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem; /* Reduce font size for buttons */
+    transition: background-color 0.2s ease;
+    text-align: center;
+  }
+  
+  .user-info-popup .logout-button:hover {
+    background-color: #b21f1f;
+  }
+  
+  .user-info-popup .update-button {
+    background-color: #007bff; /* Blue for update */
+  }
+  
+  .user-info-popup .update-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-info-popup .loading,
+  .user-info-popup .error {
+    font-size: 1rem; /* Increase font size for messages */
+    text-align: center;
+    margin-bottom: 1.5rem; /* Add more spacing below loading/error messages */
+  }
