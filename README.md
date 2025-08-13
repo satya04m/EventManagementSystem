@@ -58,4 +58,4 @@ The system uses a relational database with the following tables and relationship
 * **Backend**: Deployed locally using either Spring Boot or ASP.NET Core.
 * **Database**: A local instance of the database is set up for testing purposes.
 
-I have uploaded a PDF for your reference. You can view the document by clicking here: [click me](EMF-master/Event Management System.pdf)
+I have uploaded a PDF for your reference. You can view the document by clicking here: [click me](EMF-master/Event%20Management%20System.pdf)
