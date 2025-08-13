@@ -57,3 +57,5 @@ The system uses a relational database with the following tables and relationship
 * **Frontend**: Served using local servers (e.g., `ng serve` for Angular).
 * **Backend**: Deployed locally using either Spring Boot or ASP.NET Core.
 * **Database**: A local instance of the database is set up for testing purposes.
+
+I have uploaded a PDF for your reference. Please check it out at <EMF-master/Event Management System.pdf>.
